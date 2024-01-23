@@ -11,6 +11,9 @@ const config: Config = {
       backgroundImage: (theme) => ({
         "background-pattern": `url("data:image/svg+xml;base64,${base64bg}")`,
       }),
+      listStyleImage: {
+        checkcircle: 'url("/checkcircle.png")',
+      },
       colors: {
         tsGray: {
           50: "#F9FAFB",

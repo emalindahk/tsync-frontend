@@ -38,16 +38,15 @@ const AdvantageSection = () => {
   return (
     <div className="relative flex items-center w-full py-24 px-4 gap-x-4">
       <div>
-        <h3 className="text-base font-medium text-tsBlue-700">
+        <h3 className="text-sm font-medium text-tsBlue-700">
           The ClearLink Advantage
         </h3>
         <h2 className="text-3xl font-semibold text-tsGray-800">
           Why choose ClearLink?
         </h2>
-        <p className="mt-3 text-tsGray-500 font-normal">
+        <p className="mt-3 text-tsGray-500 font-normal text-wrap max-w-sm">
           In a world where connection is everything, ClearLink takes the lead.
-          Our <br />
-          cutting-edge video conferencing app offers:
+          Our cutting-edge video conferencing app offers:
         </p>
         <div className="grid grid-cols-2 gap-x-10 gap-y-14 mt-20">
           {features.map((f, i) => (
