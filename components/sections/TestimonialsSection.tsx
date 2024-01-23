@@ -2,7 +2,7 @@ import React from 'react'
 import Image from "next/image";
 
 import Carousel from '../ui/Carousel'
-import testimonialsImage from '../../public/images/Contentstestimonials.png'
+import testimonialsImage from '../../public/images/Contents.svg'
 import { testimonials } from '../data';
 
 const TestimonialsSection = () => {

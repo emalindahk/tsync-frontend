@@ -34,7 +34,7 @@ const CTASection = () => {
         </div>
       </div>
       <Image
-        src="/images/ScreenMockup.png"
+        src="/images/ScreenMockup.svg"
         alt="Screen Mockup"
         width={720}
         height={402}
