@@ -42,8 +42,8 @@ const Footer = () => {
           © 2023 ClearLink. All rights reserved.
         </span>
         <div className="flex items-center gap-x-6 cursor-pointer">
-          {socialIcons.map((icon) => (
-            <Icon content={icon} />
+          {socialIcons.map((icon, i) => (
+            <Icon content={icon} key={i}/>
           ))}
         </div>
       </div>

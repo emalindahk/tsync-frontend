@@ -1,38 +1,9 @@
 import React, { ReactNode } from "react";
 import Image from "next/image";
 
-import svgs from "../svgs";
 import Icon from "../ui/Icon";
 import featureImage from "../../public/images/features.png"
-
-interface featuresProps {
-  icon: ReactNode;
-  title: string;
-  text: string;
-}
-
-const features: featuresProps[] = [
-  {
-    icon: svgs.videoRecorder,
-    title: "Crystal-clear HD video",
-    text: `No more pixelation or blurriness just stunning, lifelike clarity that brings your team closer in meetings.`,
-  },
-  {
-    icon: svgs.recording,
-    title: "Noise-canceling audio",
-    text: "Say goodbye to distractions with our advanced audio tech for crisp, interruption-free conversations.",
-  },
-  {
-    icon: svgs.calendar,
-    title: "Scheduling made easy",
-    text: "Streamline your agenda with ClearLink's intuitive scheduling. Set up meetings, send invitations, and receive reminders in one place.",
-  },
-  {
-    icon: svgs.lockUnlocked,
-    title: "Crystal-clear HD video",
-    text: "Your privacy is our priority with bank-grade security protocols safeguarding your meetings and data from unwanted intruders.",
-  },
-];
+import { features } from "../data";
 
 const AdvantageSection = () => {
   return (

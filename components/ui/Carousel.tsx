@@ -50,8 +50,8 @@ const Carousel: React.FC<CarouselProps> = ({ testimonials }) => {
             />
           </div>
           <div className="flex items-center">
-            {[...Array(testimonial.rating)].map(() => (
-              <Icon content={svgs.star} />
+            {[...Array(testimonial.rating)].map((i) => (
+              <Icon content={svgs.star} key={i}/>
             ))}
           </div>
           <p className="text-xl font-semibold text-tsGray-800 max-w-sm">

@@ -17,8 +17,8 @@ const SocialProofSection = () => {
         Join 1,500+ companies already video conferencing the ClearLink way
       </p>
       <div className="flex items-center justify-items-start gap-x-8">
-        {logos.map((logo) => (
-            <Icon content={logo}/>
+        {logos.map((logo, i) => (
+            <Icon key={i} content={logo}/>
         ))}
       </div>
     </div>

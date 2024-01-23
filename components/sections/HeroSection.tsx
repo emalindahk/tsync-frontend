@@ -14,20 +14,18 @@ const HeroSection = () => {
   return (
     <div className="py-4 bg-background-pattern w-full bg-cover">
       <Header />
-      <div className="mt-28 flex justify-between w-full items-start">
+      <div className="mt-14 sm:mt-28 flex flex-col sm:flex-row justify-between w-full items-start">
         <div className="flex flex-col gap-y-5 items-start">
-          <h1 className="text-tsGray-800 text-[54px] font-semibold">
+          <h1 className="text-tsGray-800 text-5xl sm:text-[56px] font-semibold xl:max-w-lg">
             Uniting the world,
-            <br />
             one video call at a time
           </h1>
-          <p className="text-tsGray-500 text-base font-normal">
-            Experience the future of communication with ClearLink – <br />
-            where crystal-clear video conferencing meets <br/> 
-            unparalleled simplicity.
+          <p className="text-tsGray-500 text-base font-normal max-w-lg">
+            Experience the future of communication with ClearLink –
+            where crystal-clear video conferencing meets unparalleled simplicity.
           </p>
 
-          <div className="flex items-center py-6 gap-x-3">
+          <div className="flex flex-col sm:flex-row items-center py-6 sm:gap-x-3">
             <Button label="Start your free trial" variant="solid" />
             <div className="flex items-center gap-x-2">
               <Icon content={svgs.robot} />
@@ -40,7 +38,7 @@ const HeroSection = () => {
           <UserReviews />
         </div>
 
-        <div className="flex flex-col items-center gap-y-5 p-8 border rounded-2xl bg-tsBlue-200">
+        <div className="flex flex-col items-center gap-y-5 p-8 border rounded-2xl bg-tsBlue-200 mt-8 sm:mt-0">
           <Image
             alt="Hero Image"
             src={hero}
@@ -49,8 +47,8 @@ const HeroSection = () => {
             className="object-cover"
           />
           <div className="flex items-center gap-x-2">
-            {controlIcons.map((icon) => (
-              <div className="rounded-full bg-white border border-tsBlue-100 shadow-sm p-3">
+            {controlIcons.map((icon, i) => (
+              <div className="rounded-full bg-white border border-tsBlue-100 shadow-sm p-3" key={i}>
                 <Icon content={icon} width="20px" height="20px" />
               </div>
             ))}
