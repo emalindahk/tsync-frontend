@@ -36,7 +36,7 @@ const features: featuresProps[] = [
 
 const AdvantageSection = () => {
   return (
-    <div className="relative flex items-center w-full py-12 px-4 gap-x-4">
+    <div className="relative flex items-center w-full py-24 px-4 gap-x-4">
       <div>
         <h3 className="text-base font-medium text-tsBlue-700">
           The ClearLink Advantage
@@ -52,7 +52,7 @@ const AdvantageSection = () => {
         <div className="grid grid-cols-2 gap-x-10 gap-y-14 mt-20">
           {features.map((f, i) => (
             <div className="flex flex-col" key={i}>
-              <div className="rounded-full border border-tsGray-200 bg-tsGray-50 p-3 w-10 h-10">
+              <div className=" rounded-full shadow-lg border border-tsGray-200 bg-tsGray-50 p-3 w-12 h-12">
                 <Icon content={f.icon} />
               </div>
               <div className="mt-5">
@@ -68,7 +68,7 @@ const AdvantageSection = () => {
         </div>
       </div>
       <div className="w-full">
-        <Image src={featureImage} alt="Features Image"/>
+        <Image src={featureImage} alt="Features Image" />
       </div>
     </div>
   );

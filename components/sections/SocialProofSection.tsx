@@ -12,7 +12,7 @@ const SocialProofSection = () => {
     svgs.automattic,
   ];
   return (
-    <div className="relative flex flex-col items-center py-12 gap-y-6 w-full px-12">
+    <div className="relative flex flex-col items-center py-24 gap-y-6 w-full px-12">
       <p className="text-tsGray-600 text-md font-normal">
         Join 1,500+ companies already video conferencing the ClearLink way
       </p>
