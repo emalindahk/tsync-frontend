@@ -39,6 +39,7 @@ const CTASection = () => {
         width={720}
         height={402}
         className="transform translate-x-20 -translate-y-14"
+        priority
       />
     </div>
   );

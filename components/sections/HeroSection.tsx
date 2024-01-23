@@ -45,6 +45,7 @@ const HeroSection = () => {
             width={520}
             height={340}
             className="object-cover"
+            priority
           />
           <div className="flex items-center gap-x-2">
             {controlIcons.map((icon, i) => (

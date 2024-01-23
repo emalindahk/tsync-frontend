@@ -10,7 +10,7 @@ const TestimonialsSection = () => {
     <div className='flex items-start w-full justify-between py-24 px-8'>
         <Carousel testimonials={testimonials}/>
         <div className='max-w-xl w-full mx-auto'>
-            <Image src={testimonialsImage} alt="Testimonials Image"/>
+            <Image src={testimonialsImage} alt="Testimonials Image" priority/>
         </div>
     </div>
   )
