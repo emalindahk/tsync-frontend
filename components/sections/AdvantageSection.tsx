@@ -36,7 +36,7 @@ const features: featuresProps[] = [
 
 const AdvantageSection = () => {
   return (
-    <div className="relative flex items-center w-full py-24 px-4 gap-x-4">
+    <div className="relative flex items-center w-full py-12 px-4 gap-x-4">
       <div>
         <h3 className="text-sm font-medium text-tsBlue-700">
           The ClearLink Advantage
