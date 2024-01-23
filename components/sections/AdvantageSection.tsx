@@ -38,7 +38,7 @@ const AdvantageSection = () => {
         </div>
       </div>
       <div className="w-full">
-        <Image src={featureImage} alt="Features Image" />
+        <Image src={featureImage} alt="Features Image" priority/>
       </div>
     </div>
   );
